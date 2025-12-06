@@ -1,5 +1,5 @@
 from time import perf_counter
-from matrix import Matrix
+from lib.matrix import Matrix
 
 
 def part1(matrix: Matrix) -> int:

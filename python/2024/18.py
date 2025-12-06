@@ -1,6 +1,6 @@
 from collections import deque
 from time import perf_counter
-from matrix import Matrix
+from lib.matrix import Matrix
 
 
 def find_minimum_score(maze: Matrix, start: tuple[int, int], end: tuple[int, int]) -> int:

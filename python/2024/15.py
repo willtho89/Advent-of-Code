@@ -1,5 +1,5 @@
 from time import perf_counter
-from matrix import Matrix
+from lib.matrix import Matrix
 
 with open('15.input', 'r') as file:
     din = file.read()

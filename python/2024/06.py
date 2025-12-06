@@ -1,6 +1,6 @@
 from itertools import cycle
 
-from matrix import Matrix
+from lib.matrix import Matrix
 
 with open('06.input', 'r') as file:
     din = file.read()

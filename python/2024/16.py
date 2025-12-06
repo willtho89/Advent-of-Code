@@ -1,6 +1,6 @@
 from time import perf_counter
 from heapq import heappush, heappop
-from matrix import Matrix
+from lib.matrix import Matrix
 
 
 MOVE_COST = 1

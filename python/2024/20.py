@@ -1,7 +1,7 @@
 from collections import defaultdict
 from time import perf_counter
 import heapq
-from matrix import Matrix
+from lib.matrix import Matrix
 
 directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
 

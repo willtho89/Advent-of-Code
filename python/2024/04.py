@@ -1,4 +1,4 @@
-from matrix import Matrix
+from lib.matrix import Matrix
 
 with open('04.input', 'r') as file:
     din = file.read().splitlines()

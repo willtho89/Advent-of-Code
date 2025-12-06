@@ -1,5 +1,5 @@
 from itertools import permutations
-from matrix import Matrix
+from lib.matrix import Matrix
 
 # Read the input file
 with open("08.input", "r") as file:
