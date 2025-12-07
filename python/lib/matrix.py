@@ -4,8 +4,10 @@ from collections import defaultdict
 class Matrix:
     def __init__(self, size, default=0, wrap=False):
         self.size = size
+        self.m, self.n = size
         self.default = default
         self.wrap = wrap
+
         self.matrix = defaultdict(lambda: default)
 
     def _convert_pos(self, pos):
@@ -82,3 +84,11 @@ class Matrix:
                     got = self.get([pos[0] + i, pos[1] + j])
                     if got is not None:
                         yield got, [pos[0] + i, pos[1] + j]
+
+    def find_start(self, start_char: str = "S") -> tuple[int, int]:
+        for i in range(self.m):
+            for j in range(self.n):
+                if self[[i, j]] == start_char:
+                    return i, j
+        raise ValueError(f"No start position '{start_char}' found in manifold diagram.")
+
